@@ -48,7 +48,7 @@ public class EmployeeController {
 	public String editEmployee (Model model, @PathVariable("id") int empId) {
 		Employee employee = service.getEmployeeById(empId);
 		model.addAttribute("employee", employee);
-		return "edit_employee";
+		return "update_employee";
 
 	}
 	@PostMapping("/employees")
